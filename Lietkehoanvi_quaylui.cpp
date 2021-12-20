@@ -5,10 +5,11 @@ int a[100];
 int count = 0;
 void ghinhan(){
 	count ++;
-	cout << "hoan vi thu" <<count<<" la: ";
+	cout << "hoan vi thu " <<count<<" la: ";
 	for (int i = 1; i <= n; i++){
-		cout << a[i];
+		cout << a[i] << " ";
 	}
+	cout << endl;
 }
 bool test(int j, int k) // kiem tra xem j co trong S[k] chua
 {

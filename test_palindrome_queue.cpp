@@ -3,12 +3,11 @@
 #include<string.h>
 using namespace std ;
 int main() {
-    char str[] = "MADAM";
+    string str; cin >> str;
     queue<char> Q;
-    for(int i = 0; i < sizeof(str)-1; i++){
+    for(int i = 0; i < str.size(); i++){
         Q.push(str[i]);
     }
-    cout << sizeof(str);
     int q = 0;
     for(int i = sizeof(str)-2; i >= 0; i--){
         if(Q.front() == str[i]) Q.pop();
